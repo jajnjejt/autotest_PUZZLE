@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>autoTest</groupId>
+  <artifactId>autoTest</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <properties>
+	  <property.build.Encodingscource>utf-8</property.build.Encodingscource>
+  </properties>
+  <dependencies>
+	  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+	<dependency>
+	    <groupId>org.seleniumhq.selenium</groupId>
+	    <artifactId>selenium-java</artifactId>
+	    <version>4.11.0</version>
+	</dependency>
+	<dependency>
+		<groupId>com.google.apis</groupId>
+		<artifactId>google-api-services-sheets</artifactId>
+		<version>v4-rev20210629-1.32.1</version>
+	</dependency>
+  </dependencies>
+  <build>
+     <sourceDirectory>src/main/java</sourceDirectory>
+     <plugins>
+         <plugin>
+             <artifactId>maven-compiler-plugin</artifactId>
+             <version>3.8.1</version>
+             <configuration>
+                 <release>20</release>
+             </configuration>
+         </plugin>
+     </plugins>
+  </build>
+</project>
